@@ -18,7 +18,7 @@
     <div id="root">
         <div class="list_container">
             <ul v-if="toDoList.length > 0">
-                <li v-for="object, index in toDoList">{{ object.text }} <i class="far fa-times-circle" @click="removeObject(index)"></i></li>
+                <li v-for="object, index in toDoList" :class="object.completed ? 'completed' : ''" @click="toggle(object)"> {{ object.text }} <i class="far fa-times-circle" @click="removeObject(index)"></i></li>
             </ul>
             <h2 v-else>Non ci sono più attività da mostrare</h2>
             <div class="input">

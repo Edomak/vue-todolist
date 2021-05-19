@@ -51,6 +51,9 @@ var app = new Vue (
                     completed: false,
                 });
                 event.target.value = "";
+            },
+            toggle: function (item) {
+               item.completed = !item.completed;
             }
         }
     }

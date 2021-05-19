@@ -46,6 +46,9 @@ h2 {
    padding: 20px 0;
    text-transform: uppercase;
 }
+.list_container ul li.completed {
+    text-decoration: line-through;
+}
 
 .list_container ul li i {
     cursor: pointer;
